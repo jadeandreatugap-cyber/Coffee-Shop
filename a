@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coffee Shop</title>
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(rgba(202, 166, 73, 0.2), rgba(202, 166, 73, 0.2));
+		}
+		.home{
+			min-height: 100vh;
+			width: 100%;
+			background-image: linear-gradient(rgba(202, 166, 73, 0.2), rgba(202, 166, 73, 0.2)), url(images/background.jpeg);
+			background-size: cover;
+			position: relative;
+		}
+		.logo1{
+			width: 400px;
+			height: 100px;
+			padding: 8px 12px;
+		}
+		.logo{
+			float: left;
+		}
+		.nav-links{
+			float: right;
+		}
+		li{
+			display: inline-block;
+			padding: 38px;
+			margin-left: 50px;
+		}
+		li::after{
+			content: '';
+			width: 0%;
+			height: 3px;
+			background: rgba(187, 134, 55, 1);
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		li:hover::after{
+			width: 100%;
+		}
+		a{
+			color: rgba(89, 60, 28, 1);
+			font-size: 20px;
+			text-decoration: none;
+		}
+		.tagline{
+			float: left;
+			margin-top: 150px;
+			margin-left: 500px;
+			font-size: 60px;
+			font-family: Lucida Handwriting;
+			color: black;
+		}
+		.btn{
+			color: black;
+			margin-left: 300px;
+			border: 2px solid;
+			padding: 20px;
+		}
+		.btn:hover{
+			background: rgba(187, 134, 55, 1);
+			transition: 0.5s;
+		}
+		.menu-name{
+			padding-top: 50px;
+			font-size: 50px;
+			font-family: Lucida Handwriting;
+		}
+		.btn-group button{
+			border: none;
+			background-color: rgba(202, 166, 73, 0.2);
+			cursor: pointer;
+			font-size: 25px;
+			margin-right: 20px;
+			padding: 10px;
+		}
+		.center{
+			margin-left: 740px;
+		}
+		h1{
+			text-align: center;
+			font-size: 30px;
+			padding-top: 30px;
+		}
+		.coffee-img{
+			width: 500px;
+			height: 500px;
+		}
+		.tea-img{
+			width: 500px;
+			height: 500px;
+			float: right;
+		}
+		.non-coffee-img{
+			width: 500px;
+			height: 500px;
+		}
+		.desserts-img{
+			width: 500px;
+			height: 500px;
+			float: right;
+		}
+		table, tr, td, th{
+			border: 1px solid;
+			border-collapse: collapse;
+		}
+		table{
+			width: 50%;
+			height: 300px;
+		}
+		th, td{
+			text-align: center;
+		}
+		.coffee-menu{
+			float: right;
+			margin-top: 110px;
+			margin-right: 100px;
+		}
+		.tea-menu{
+			margin-top: 110px;
+			margin-left: 100px;
+			margin-bottom: 100px;
+		}
+		.non-coffee-menu{
+			float: right;
+			margin-top: 110px;
+			margin-right: 100px;
+		}
+		.desserts-menu{
+			margin-top: 120px;
+			margin-left: 100px;
+			margin-bottom: 100px;
+		}
+	</style>
+</head>
+<body>
+<!--------HOME-------->
+	<section class="home" id="home">
+		<div class="logo">
+			<a href="Cup O' Coffee.html"><img src="C:\Users\Tugap\Desktop\Coffee Shop\images\logo (2).png" class="logo1"></a>
+		</div>
+		<div class="nav-links">
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#menu">MENU</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#about">ABOUT</a></li>
+			</ul>
+		</div>
+		<div class="tagline">
+			<p>The Perfect Cup, Every Time.</p>
+			<a href="" class="btn">Visit Us To Know More</a>
+		</div>
+	</section>
+<!--------MENU-------->
+	<section id="menu">
+		<h1 class="menu-name">Cafe Menu</h1>
+			<div class="btn-group">
+				<button class="center"><a href="#coffee">Coffee</a></button>
+				<button><a href="#tea">Tea</a></button>
+				<button><a href="#non-coffee">Non-Coffee</a></button>
+				<button><a href="#desserts">Desserts</a></button>
+			</div>
+			<div id="coffee">
+				<h1>Coffee</h1>
+					<img src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif" class="coffee-img">
+						<table class="coffee-menu">
+							<tr>
+								<th></th>
+								<th>Short</th>
+								<th>Tall</th>
+								<th>Grande</th>
+							</tr>
+							<tr>
+								<td>Americano</td>
+								<td>185 php</td>
+								<td>210 php</td>
+								<td>235 php</td>
+							</tr>
+							<tr>
+								<td>Cappuccino</td>
+								<td>200 php</td>
+								<td>225 php</td>
+								<td>250 php</td>
+							</tr>
+							<tr>
+								<td>Latte</td>
+								<td>200 php</td>
+								<td>225 php</td>
+								<td>250 php</td>
+							</tr>
+							<tr>
+								<td>Double Espresso</td>
+								<td>120 php</td>
+								<td>140 php</td>
+								<td>180 php</td>
+							</tr>
+							<tr>
+								<td>Machiato</td>
+								<td>250 php</td>
+								<td>275 php</td>
+								<td>300 php</td>
+							</tr>
+							<tr>
+								<td>Mochaccino</td>
+								<td>155 php</td>
+								<td>180 php</td>
+								<td>200 php</td>
+							</tr>
+							<tr>
+								<td>Long Black</td>
+								<td>125 php</td>
+								<td>150 php</td>
+								<td>200 php</td>
+							</tr>
+							<tr>
+								<td>Flat White</td>
+								<td>250 php</td>
+								<td>280 php</td>
+								<td>310 php</td>
+							</tr>
+						</table>
+			</div>
+			<div id="tea">
+				<h1>Tea</h1>
+					<img src="https://media4.giphy.com/media/aEs9rmR5ObHvWhINE3/source.gif" class="tea-img">
+						<table class="tea-menu">
+							<tr>
+								<th></th>
+								<th>Short</th>
+								<th>Tall</th>
+								<th>Grande</th>
+							</tr>
+							<tr>
+								<td>Hot Tea</td>
+								<td>110 php</td>
+								<td>125 php</td>
+								<td>140 php</td>
+							</tr>
+							<tr>
+								<td>Iced Tea</td>
+								<td>125 php</td>
+								<td>135 php</td>
+								<td>150 php</td>
+							</tr>
+							<tr>
+								<td>Lemon Tea</td>
+								<td>85 php</td>
+								<td>100 php</td>
+								<td>125 php</td>
+							</tr>
+							<tr>
+								<td>Green Tea</td>
+								<td>100 php</td>
+								<td>125 php</td>
+								<td>150 php</td>
+							</tr>
+							<tr>
+								<td>Jasmine Tea</td>
+								<td>100 php</td>
+								<td>125 php</td>
+								<td>150 php</td>
+							</tr>
+						</table>
+			</div>
+			<div id="non-coffee">
+				<h1>Non-Coffee</h1>
+					<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7629c7119034013.6099db2804e15.gif" class="non-coffee-img">
+						<table class="non-coffee-menu">
+							<tr>
+								<th></th>
+								<th>Small</th>
+								<th>Medium</th>
+								<th>Large</th>
+							</tr>
+							<tr>
+								<td>Caramel</td>
+								<td>150 php</td>
+								<td>175 php</td>
+								<td>190 php</td>
+							</tr>
+							<tr>
+								<td>Coffee Jelly</td>
+								<td>170 php</td>
+								<td>185 php</td>
+								<td>205 php</td>
+							</tr>
+							<tr>
+								<td>Hazelnut Mocha</td>
+								<td>145 php</td>
+								<td>160 php</td>
+								<td>185 php</td>
+							</tr>
+							<tr>
+								<td>Matcha Cream</td>
+								<td>110 php</td>
+								<td>130 php</td>
+								<td>150 php</td>
+							</tr>
+							<tr>
+								<td>Strawberry Cream</td>
+								<td>155 php</td>
+								<td>180 php</td>
+								<td>215 php</td>
+							</tr>
+							<tr>
+								<td>Vanilla Bean</td>
+								<td>130 php</td>
+								<td>150 php</td>
+								<td>180 php</td>
+							</tr>
+							<tr>
+								<td>Milkshake</td>
+								<td>120 php</td>
+								<td>130 php</td>
+								<td>140 php</td>
+							</tr>
+							<tr>
+								<td>Milk Tea</td>
+								<td>100 php</td>
+								<td>125 php</td>
+								<td>150 php</td>
+							</tr>
+						</table>
+			</div>
+			<div id="desserts">
+				<h1>Desserts</h1>
+					<img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeGVmNTlrMzdyNzc1MW9pNWRndzMxM2p5cXFibmo2eTY3MnBoZHFjeiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/JaA5BrXM9DYpAgMckw/200.gif" class="desserts-img">
+						<table class="desserts-menu">
+							<tr>
+								<td>Strawberry Waffle</td>
+								<td>140 php</td>
+							</tr>
+							<tr>
+								<td>Cinnamon Roll</td>
+								<td>130 php</td>
+							</tr>
+							<tr>
+								<td>Lemon Pie</td>
+								<td>100 php</td>
+							</tr>
+							<tr>
+								<td>Croissant</td>
+								<td>105 php</td>
+							</tr>
+							<tr>
+								<td>Chocolate Waffle</td>
+								<td>120 php</td>
+							</tr>
+						</table>
+			</div>
+	</section>
+<!--------ABOUT-------->
+	<section id="gallery">
+	</section>
+</body>
+</html>
