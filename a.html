@@ -26,12 +26,12 @@
 		.nav-links{
 			float: right;
 		}
-		li{
+		.list{
 			display: inline-block;
 			padding: 38px;
 			margin-left: 50px;
 		}
-		li::after{
+		.list::after{
 			content: '';
 			width: 0%;
 			height: 3px;
@@ -40,7 +40,7 @@
 			margin: auto;
 			transition: 0.5s;
 		}
-		li:hover::after{
+		.list:hover::after{
 			width: 100%;
 		}
 		a{
@@ -61,17 +61,17 @@
 			margin-left: 300px;
 			border: 2px solid;
 			padding: 20px;
+			transition: 0.5s;
 		}
 		.btn:hover{
 			background: rgba(187, 134, 55, 1);
-			transition: 0.5s;
 		}
 		.menu-name{
-			padding-top: 50px;
+			padding-top: 100px;
 			font-size: 50px;
 			font-family: Lucida Handwriting;
 		}
-		.btn-group button{
+		button{
 			border: none;
 			background-color: rgba(202, 166, 73, 0.2);
 			cursor: pointer;
@@ -79,31 +79,10 @@
 			margin-right: 20px;
 			padding: 10px;
 		}
-		.center{
-			margin-left: 740px;
-		}
 		h1{
 			text-align: center;
 			font-size: 30px;
 			padding-top: 30px;
-		}
-		.coffee-img{
-			width: 500px;
-			height: 500px;
-		}
-		.tea-img{
-			width: 500px;
-			height: 500px;
-			float: right;
-		}
-		.non-coffee-img{
-			width: 500px;
-			height: 500px;
-		}
-		.desserts-img{
-			width: 500px;
-			height: 500px;
-			float: right;
 		}
 		table, tr, td, th{
 			border: 1px solid;
@@ -136,6 +115,31 @@
 			margin-left: 100px;
 			margin-bottom: 100px;
 		}
+		img{
+			width: 300px;
+			height: 300px;
+			transition: 0.5s;
+		}
+		img:hover {
+			width: 400px;
+			height: 400px;
+		}
+		#coffee-img{
+			float: left;
+			margin-left: 130px;
+		}
+		#tea-img{
+			float: left;
+			margin-left: 130px;
+		}
+		#non-coffee-img{
+			float: left;
+			margin-left: 130px;
+		}
+		#desserts-img{
+			float: left;
+			margin-left: 130px;
+		}
 	</style>
 </head>
 <body>
@@ -146,10 +150,10 @@
 		</div>
 		<div class="nav-links">
 			<ul>
-				<li><a href="#home">HOME</a></li>
-				<li><a href="#menu">MENU</a></li>
-				<li><a href="#gallery">GALLERY</a></li>
-				<li><a href="#about">ABOUT</a></li>
+				<li class="list"><a href="#home">HOME</a></li>
+				<li class="list"><a href="#menu">MENU</a></li>
+				<li class="list"><a href="#news">NEWS</a></li>
+				<li class="list"><a href="#about">ABOUT</a></li>
 			</ul>
 		</div>
 		<div class="tagline">
@@ -160,15 +164,25 @@
 <!--------MENU-------->
 	<section id="menu">
 		<h1 class="menu-name">Cafe Menu</h1>
-			<div class="btn-group">
-				<button class="center"><a href="#coffee">Coffee</a></button>
-				<button><a href="#tea">Tea</a></button>
-				<button><a href="#non-coffee">Non-Coffee</a></button>
-				<button><a href="#desserts">Desserts</a></button>
-			</div>
+				<div id="coffee-img">
+					<h1>Coffee</h1>
+					<a href="#coffee"><img src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"></a>
+				</div>
+				<div id="tea-img">
+					<h1>Tea</h1>
+					<a href="#tea"><img src="https://media4.giphy.com/media/aEs9rmR5ObHvWhINE3/source.gif"></a>
+				</div>
+				<div id="non-coffee-img">
+					<h1>Non-Coffee</h1>
+					<a href="#non-coffee"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7629c7119034013.6099db2804e15.gif"></a>
+				</div>
+				<div id="desserts-img">
+					<h1>Desserts</h1>
+					<a href="#desserts"><img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeGVmNTlrMzdyNzc1MW9pNWRndzMxM2p5cXFibmo2eTY3MnBoZHFjeiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/JaA5BrXM9DYpAgMckw/200.gif"></a>
+				</div>
+
+
 			<div id="coffee">
-				<h1>Coffee</h1>
-					<img src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif" class="coffee-img">
 						<table class="coffee-menu">
 							<tr>
 								<th></th>
@@ -227,8 +241,6 @@
 						</table>
 			</div>
 			<div id="tea">
-				<h1>Tea</h1>
-					<img src="https://media4.giphy.com/media/aEs9rmR5ObHvWhINE3/source.gif" class="tea-img">
 						<table class="tea-menu">
 							<tr>
 								<th></th>
@@ -269,8 +281,6 @@
 						</table>
 			</div>
 			<div id="non-coffee">
-				<h1>Non-Coffee</h1>
-					<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7629c7119034013.6099db2804e15.gif" class="non-coffee-img">
 						<table class="non-coffee-menu">
 							<tr>
 								<th></th>
@@ -329,8 +339,6 @@
 						</table>
 			</div>
 			<div id="desserts">
-				<h1>Desserts</h1>
-					<img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeGVmNTlrMzdyNzc1MW9pNWRndzMxM2p5cXFibmo2eTY3MnBoZHFjeiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/JaA5BrXM9DYpAgMckw/200.gif" class="desserts-img">
 						<table class="desserts-menu">
 							<tr>
 								<td>Strawberry Waffle</td>
@@ -355,8 +363,9 @@
 						</table>
 			</div>
 	</section>
-<!--------ABOUT-------->
-	<section id="gallery">
+<!--------NEWS-------->
+	<section id="news">
+		
 	</section>
 </body>
 </html>
