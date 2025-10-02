@@ -5,23 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Coffee Shop</title>
 	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
 		body{
 			background-image: linear-gradient(rgba(202, 166, 73, 0.2), rgba(202, 166, 73, 0.2));
 		}
 		.home{
 			min-height: 100vh;
 			width: 100%;
-			background-image: linear-gradient(rgba(202, 166, 73, 0.2), rgba(202, 166, 73, 0.2)), url(images/background.jpeg);
+			background-image: linear-gradient(rgba(202, 166, 73, 0.2), rgba(202, 166, 73, 0.2)), url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D);
 			background-size: cover;
 			position: relative;
 		}
-		.logo1{
-			width: 400px;
-			height: 100px;
-			padding: 8px 12px;
+		.scrolltotop{
+			position: fixed;
+		}
+		.scrolltotop-img{
+			width: 70px;
+			height: 70px;
+			margin-top: 850px;
 		}
 		.logo{
 			float: left;
+			margin-left: 20px;
+			margin-top: -15px;
 		}
 		.nav-links{
 			float: right;
@@ -89,56 +97,60 @@
 			border-collapse: collapse;
 		}
 		table{
-			width: 50%;
+			width: 1000px;
 			height: 300px;
 		}
 		th, td{
 			text-align: center;
 		}
-		.coffee-menu{
-			float: right;
-			margin-top: 110px;
-			margin-right: 100px;
-		}
-		.tea-menu{
-			margin-top: 110px;
-			margin-left: 100px;
-			margin-bottom: 100px;
-		}
-		.non-coffee-menu{
-			float: right;
-			margin-top: 110px;
-			margin-right: 100px;
-		}
-		.desserts-menu{
-			margin-top: 120px;
-			margin-left: 100px;
-			margin-bottom: 100px;
-		}
-		img{
-			width: 300px;
-			height: 300px;
+		.img{
+			width: 200px;
+			height: 200px;
 			transition: 0.5s;
 		}
-		img:hover {
-			width: 400px;
-			height: 400px;
+		.img:hover {
+			width: 300px;
+			height: 300px;
 		}
 		#coffee-img{
 			float: left;
-			margin-left: 130px;
+			margin-left: 80px;
+			text-align: center;
 		}
 		#tea-img{
 			float: left;
-			margin-left: 130px;
+			margin-left: 80px;
+			text-align: center;
 		}
 		#non-coffee-img{
 			float: left;
-			margin-left: 130px;
+			margin-left: 80px;
+			text-align: center;
 		}
 		#desserts-img{
 			float: left;
-			margin-left: 130px;
+			margin-left: 80px;
+			text-align: center;
+		}
+		.coffee-menu{
+			float: left;
+			margin-top: 110px;
+			margin-left: 450px;
+		}
+		.tea-menu{
+			float: left;
+			margin-top: 110px;
+			margin-left: 450px;
+		}
+		.non-coffee-menu{
+			float: left;
+			margin-top: 110px;
+			margin-left: 450px;
+		}
+		.desserts-menu{
+			float: left;
+			margin-top: 110px;
+			margin-left: 450px;
 		}
 	</style>
 </head>
@@ -146,7 +158,7 @@
 <!--------HOME-------->
 	<section class="home" id="home">
 		<div class="logo">
-			<a href="Cup O' Coffee.html"><img src="C:\Users\Tugap\Desktop\Coffee Shop\images\logo (2).png" class="logo1"></a>
+			<a href="Cup O' Coffee.html"><h1>Cup O' Coffee</h1></a>
 		</div>
 		<div class="nav-links">
 			<ul>
@@ -160,207 +172,212 @@
 			<p>The Perfect Cup, Every Time.</p>
 			<a href="" class="btn">Visit Us To Know More</a>
 		</div>
+		<div class="scrolltotop">
+			<a href="#home"><img src="https://cdn-icons-png.flaticon.com/512/4196/4196777.png" class="scrolltotop-img"></a>
+		</div>
 	</section>
 <!--------MENU-------->
-	<section id="menu">
+	<section class="menu" id="menu">
 		<h1 class="menu-name">Cafe Menu</h1>
 				<div id="coffee-img">
+					<a href="#coffee"><img src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif" class="img"></a>
 					<h1>Coffee</h1>
-					<a href="#coffee"><img src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"></a>
+					<p>Wide range of steaming hot coffee to make you fresh and light.</p>
 				</div>
 				<div id="tea-img">
+					<a href="#tea"><img src="https://media4.giphy.com/media/aEs9rmR5ObHvWhINE3/source.gif" class="img"></a>
 					<h1>Tea</h1>
-					<a href="#tea"><img src="https://media4.giphy.com/media/aEs9rmR5ObHvWhINE3/source.gif"></a>
+					<p>Refresh your spirit and savor the warmth of every sip.</p>
 				</div>
 				<div id="non-coffee-img">
+					<a href="#non-coffee"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7629c7119034013.6099db2804e15.gif" class="img"></a>
 					<h1>Non-Coffee</h1>
-					<a href="#non-coffee"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7629c7119034013.6099db2804e15.gif"></a>
+					<p>Fruit and icy refreshing drink to make you feel fresh.</p>
 				</div>
 				<div id="desserts-img">
+					<a href="#desserts"><img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeGVmNTlrMzdyNzc1MW9pNWRndzMxM2p5cXFibmo2eTY3MnBoZHFjeiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/JaA5BrXM9DYpAgMckw/200.gif" class="img"></a>
 					<h1>Desserts</h1>
-					<a href="#desserts"><img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeGVmNTlrMzdyNzc1MW9pNWRndzMxM2p5cXFibmo2eTY3MnBoZHFjeiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/JaA5BrXM9DYpAgMckw/200.gif"></a>
+					<p>Satiate your palate and take you on a culinary treat.</p>
 				</div>
-
-
 			<div id="coffee">
-						<table class="coffee-menu">
-							<tr>
-								<th></th>
-								<th>Short</th>
-								<th>Tall</th>
-								<th>Grande</th>
-							</tr>
-							<tr>
-								<td>Americano</td>
-								<td>185 php</td>
-								<td>210 php</td>
-								<td>235 php</td>
-							</tr>
-							<tr>
-								<td>Cappuccino</td>
-								<td>200 php</td>
-								<td>225 php</td>
-								<td>250 php</td>
-							</tr>
-							<tr>
-								<td>Latte</td>
-								<td>200 php</td>
-								<td>225 php</td>
-								<td>250 php</td>
-							</tr>
-							<tr>
-								<td>Double Espresso</td>
-								<td>120 php</td>
-								<td>140 php</td>
-								<td>180 php</td>
-							</tr>
-							<tr>
-								<td>Machiato</td>
-								<td>250 php</td>
-								<td>275 php</td>
-								<td>300 php</td>
-							</tr>
-							<tr>
-								<td>Mochaccino</td>
-								<td>155 php</td>
-								<td>180 php</td>
-								<td>200 php</td>
-							</tr>
-							<tr>
-								<td>Long Black</td>
-								<td>125 php</td>
-								<td>150 php</td>
-								<td>200 php</td>
-							</tr>
-							<tr>
-								<td>Flat White</td>
-								<td>250 php</td>
-								<td>280 php</td>
-								<td>310 php</td>
-							</tr>
-						</table>
+					<table class="coffee-menu">
+						<tr>
+							<th></th>
+							<th>Short</th>
+							<th>Tall</th>
+							<th>Grande</th>
+						</tr>
+						<tr>
+							<td>Americano</td>
+							<td>185 php</td>
+							<td>210 php</td>
+							<td>235 php</td>
+						</tr>
+						<tr>
+							<td>Cappuccino</td>
+							<td>200 php</td>
+							<td>225 php</td>
+							<td>250 php</td>
+						</tr>
+						<tr>
+							<td>Latte</td>
+							<td>200 php</td>
+							<td>225 php</td>
+							<td>250 php</td>
+						</tr>
+						<tr>
+							<td>Double Espresso</td>
+							<td>120 php</td>
+							<td>140 php</td>
+							<td>180 php</td>
+						</tr>
+						<tr>
+							<td>Machiato</td>
+							<td>250 php</td>
+							<td>275 php</td>
+							<td>300 php</td>
+						</tr>
+						<tr>
+							<td>Mochaccino</td>
+							<td>155 php</td>
+							<td>180 php</td>
+							<td>200 php</td>
+						</tr>
+						<tr>
+							<td>Long Black</td>
+							<td>125 php</td>
+							<td>150 php</td>
+							<td>200 php</td>
+						</tr>
+						<tr>
+							<td>Flat White</td>
+							<td>250 php</td>
+							<td>280 php</td>
+							<td>310 php</td>
+						</tr>
+					</table>
 			</div>
 			<div id="tea">
-						<table class="tea-menu">
-							<tr>
-								<th></th>
-								<th>Short</th>
-								<th>Tall</th>
-								<th>Grande</th>
-							</tr>
-							<tr>
-								<td>Hot Tea</td>
-								<td>110 php</td>
-								<td>125 php</td>
-								<td>140 php</td>
-							</tr>
-							<tr>
-								<td>Iced Tea</td>
-								<td>125 php</td>
-								<td>135 php</td>
-								<td>150 php</td>
-							</tr>
-							<tr>
-								<td>Lemon Tea</td>
-								<td>85 php</td>
-								<td>100 php</td>
-								<td>125 php</td>
-							</tr>
-							<tr>
-								<td>Green Tea</td>
-								<td>100 php</td>
-								<td>125 php</td>
-								<td>150 php</td>
-							</tr>
-							<tr>
-								<td>Jasmine Tea</td>
-								<td>100 php</td>
-								<td>125 php</td>
-								<td>150 php</td>
-							</tr>
-						</table>
+					<table class="tea-menu">
+						<tr>
+							<th></th>
+							<th>Short</th>
+							<th>Tall</th>
+							<th>Grande</th>
+						</tr>
+						<tr>
+							<td>Hot Tea</td>
+							<td>110 php</td>
+							<td>125 php</td>
+							<td>140 php</td>
+						</tr>
+						<tr>
+							<td>Iced Tea</td>
+							<td>125 php</td>
+							<td>135 php</td>
+							<td>150 php</td>
+						</tr>
+						<tr>
+							<td>Lemon Tea</td>
+							<td>85 php</td>
+							<td>100 php</td>
+							<td>125 php</td>
+						</tr>
+						<tr>
+							<td>Green Tea</td>
+							<td>100 php</td>
+							<td>125 php</td>
+							<td>150 php</td>
+						</tr>
+						<tr>
+							<td>Jasmine Tea</td>
+							<td>100 php</td>
+							<td>125 php</td>
+							<td>150 php</td>
+						</tr>
+					</table>
 			</div>
 			<div id="non-coffee">
-						<table class="non-coffee-menu">
-							<tr>
-								<th></th>
-								<th>Small</th>
-								<th>Medium</th>
-								<th>Large</th>
-							</tr>
-							<tr>
-								<td>Caramel</td>
-								<td>150 php</td>
-								<td>175 php</td>
-								<td>190 php</td>
-							</tr>
-							<tr>
-								<td>Coffee Jelly</td>
-								<td>170 php</td>
-								<td>185 php</td>
-								<td>205 php</td>
-							</tr>
-							<tr>
-								<td>Hazelnut Mocha</td>
-								<td>145 php</td>
-								<td>160 php</td>
-								<td>185 php</td>
-							</tr>
-							<tr>
-								<td>Matcha Cream</td>
-								<td>110 php</td>
-								<td>130 php</td>
-								<td>150 php</td>
-							</tr>
-							<tr>
-								<td>Strawberry Cream</td>
-								<td>155 php</td>
-								<td>180 php</td>
-								<td>215 php</td>
-							</tr>
-							<tr>
-								<td>Vanilla Bean</td>
-								<td>130 php</td>
-								<td>150 php</td>
-								<td>180 php</td>
-							</tr>
-							<tr>
-								<td>Milkshake</td>
-								<td>120 php</td>
-								<td>130 php</td>
-								<td>140 php</td>
-							</tr>
-							<tr>
-								<td>Milk Tea</td>
-								<td>100 php</td>
-								<td>125 php</td>
-								<td>150 php</td>
-							</tr>
-						</table>
+					<table class="non-coffee-menu">
+						<tr>
+							<th></th>
+							<th>Small</th>
+							<th>Medium</th>
+							<th>Large</th>
+						</tr>
+						<tr>
+							<td>Caramel</td>
+							<td>150 php</td>
+							<td>175 php</td>
+							<td>190 php</td>
+						</tr>
+						<tr>
+							<td>Coffee Jelly</td>
+							<td>170 php</td>
+							<td>185 php</td>
+							<td>205 php</td>
+						</tr>
+						<tr>
+							<td>Hazelnut Mocha</td>
+							<td>145 php</td>
+							<td>160 php</td>
+							<td>185 php</td>
+						</tr>
+						<tr>
+							<td>Matcha Cream</td>
+							<td>110 php</td>
+							<td>130 php</td>
+							<td>150 php</td>
+						</tr>
+						<tr>
+							<td>Strawberry Cream</td>
+							<td>155 php</td>
+							<td>180 php</td>
+							<td>215 php</td>
+						</tr>
+						<tr>
+							<td>Vanilla Bean</td>
+							<td>130 php</td>
+							<td>150 php</td>
+							<td>180 php</td>
+						</tr>
+						<tr>
+							<td>Milkshake</td>
+							<td>120 php</td>
+							<td>130 php</td>
+							<td>140 php</td>
+						</tr>
+						<tr>
+							<td>Milk Tea</td>
+							<td>100 php</td>
+							<td>125 php</td>
+							<td>150 php</td>
+						</tr>
+					</table>
 			</div>
 			<div id="desserts">
-						<table class="desserts-menu">
-							<tr>
-								<td>Strawberry Waffle</td>
-								<td>140 php</td>
-							</tr>
-							<tr>
-								<td>Cinnamon Roll</td>
-								<td>130 php</td>
-							</tr>
-							<tr>
-								<td>Lemon Pie</td>
-								<td>100 php</td>
-							</tr>
-							<tr>
-								<td>Croissant</td>
-								<td>105 php</td>
-							</tr>
-							<tr>
-								<td>Chocolate Waffle</td>
-								<td>120 php</td>
-							</tr>
-						</table>
+					<table class="desserts-menu">
+						<tr>
+							<td>Strawberry Waffle</td>
+							<td>140 php</td>
+						</tr>
+						<tr>
+							<td>Cinnamon Roll</td>
+							<td>130 php</td>
+						</tr>
+						<tr>
+							<td>Lemon Pie</td>
+							<td>100 php</td>
+						</tr>
+						<tr>
+							<td>Croissant</td>
+							<td>105 php</td>
+						</tr>
+						<tr>
+							<td>Chocolate Waffle</td>
+							<td>120 php</td>
+						</tr>
+					</table>
 			</div>
 	</section>
 <!--------NEWS-------->
